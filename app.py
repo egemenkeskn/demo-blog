@@ -10,6 +10,12 @@ class user(db.Model):
     id = db.Column(db.Integer,primary_key=True)
     password = db.Column(db.String(30),unique=False,nullable=False)
     mail = db.Column(db.String(50),unique=True,nullable=False)
+     id = db.Column(db.Integer,primary_key=True)
+    password = db.Column(db.String(30),unique=False,nullable=False)
+    mail = db.Column(db.String(50),unique=True,nullable=False)
+     id = db.Column(db.Integer,primary_key=True)
+    password = db.Column(db.String(30),unique=False,nullable=False)
+    mail = db.Column(db.String(50),unique=True,nullable=False)
 
 with app.app_context():
     db.create_all()
